@@ -26,6 +26,6 @@ router.put("/update/:sid", updateStudentController);
 router.get("/detail/:sid", getStudentInfoController);
 
 //test
-router.get("/account/test", requireSignIn, isStudent, testController);
+router.get("/account/test", testController);
 
 export default router;
